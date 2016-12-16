@@ -184,6 +184,17 @@
     "roles": [
       "posting"
     ],
+    "operation": "pow2",
+    "params": [
+      "work",
+      "new_owner_key",
+      "props"
+    ]
+  },
+  {
+    "roles": [
+      "posting"
+    ],
     "operation": "custom",
     "params": [
       "required_auths",
@@ -325,6 +336,20 @@
     "roles": [
       "posting"
     ],
+    "operation": "escrow_aprove",
+    "params": [
+      "from",
+      "to",
+      "agent",
+      "who",
+      "escrow_id",
+      "approve"
+    ]
+  },
+  {
+    "roles": [
+      "posting"
+    ],
     "operation": "escrow_transfer",
     "params": [
       "from",
@@ -449,11 +474,59 @@
     "roles": [
       "posting"
     ],
+    "operation": "fill_transfer_from_savings",
+    "params": [
+      "from",
+      "to",
+      "amount",
+      "request_id",
+      "memo"
+    ]
+  },
+  {
+    "roles": [
+      "posting"
+    ],
     "operation": "comment_payout",
     "params": [
       "author",
       "permlink",
       "payout"
+    ]
+  },
+  {
+    "roles": [
+      "active"
+    ],
+    "operation": "transfer_to_savings",
+    "params": [
+      "from",
+      "to",
+      "amount",
+      "memo"
+    ]
+  },
+  {
+    "roles": [
+      "active"
+    ],
+    "operation": "transfer_from_savings",
+    "params": [
+      "from",
+      "request_id",
+      "to",
+      "amount",
+      "memo"
+    ]
+  },
+  {
+    "roles": [
+      "active"
+    ],
+    "operation": "cancel_transfer_from_savings",
+    "params": [
+      "from",
+      "request_id"
     ]
   }
 ]
